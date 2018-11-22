@@ -61,11 +61,12 @@ body{font: 12px/1.5 PingFangSC-Regular,Tahoma,'Microsoft Yahei',sans-serif;}
 .content .prod-descr{max-width: 1200px; margin:0 auto;}
 .content .prod-descr .item{position: relative; padding-bottom: 160px; margin-bottom: 240px;}
 .content .prod-descr .item .bot-img-box{position:absolute; right: 0px; bottom: 0px;}
-.content .prod-descr .item img{width: 100%;}
+.content .prod-descr .item img{width: 100%;height:417px;}
+.content .prod-descr .item .left-img{height:585px;}
 .content .prod-descr .item .text{padding:0 70px 0 80px; color: #363636;}
-.content .prod-descr .item .text h3{font-size: 40px; padding:20px 0;}
-.content .prod-descr .item .text p{font-size: 22px; line-height: 40px; padding-bottom: 20px;}
-.content .prod-descr .item .text a{font-size: 18px; color: #ab8e75;}
+.content .prod-descr .item .text h3{font-size: 28px; padding:20px 0;}
+.content .prod-descr .item .text p{font-size: 16px; line-height: 30px; padding-bottom: 20px;}
+.content .prod-descr .item .text a{font-size: 16px; color: #ab8e75;}
 .content .Partner{height: 680px; background: url(../images/sy_imgbg.jpg) no-repeat center center; background-size:100% 100%;}
 .content .Partner .title{color: #000; padding:100px 0;}
 .content .Partner .title h3{font-size: 30px;}
@@ -171,6 +172,8 @@ body{font: 12px/1.5 PingFangSC-Regular,Tahoma,'Microsoft Yahei',sans-serif;}
     padding-bottom: 0;
     margin-bottom: 100px;
   }
+  .content .prod-descr .item img{width: 100%;height:354px;}
+  .content .prod-descr .item .left-img{height:497px;}
   .content .prod-descr .item .bot-img-box{
     position:relative; 
     margin-top: 20px;
@@ -179,19 +182,19 @@ body{font: 12px/1.5 PingFangSC-Regular,Tahoma,'Microsoft Yahei',sans-serif;}
     padding:0 30px;
   }
   .content .prod-descr .item .text h3{
-    font-size: 26px; 
+    font-size: 20px; 
     padding:30px 0;
   }
   .img-txt img{
     height:240px;
   }
   .content .prod-descr .item .text p{
-    font-size: 22px; 
+    font-size: 14px; 
     line-height: 40px; 
     padding-bottom: 20px;
   }
   .content .prod-descr .item .text a{
-    font-size: 18px; 
+    font-size: 14px; 
     color: #ab8e75;
   }
   .about-content .about-big-img .text{
@@ -245,7 +248,8 @@ body{font: 12px/1.5 PingFangSC-Regular,Tahoma,'Microsoft Yahei',sans-serif;}
   .img-txt img{
     height: 166.5px;
   }
-
+  .content .prod-descr .item img{width: 100%;height:184px;}
+  .content .prod-descr .item .left-img{height:345px;}
   .service-contact{
     margin-bottom: 50px;
   }
@@ -349,7 +353,7 @@ body{font: 12px/1.5 PingFangSC-Regular,Tahoma,'Microsoft Yahei',sans-serif;}
 }
 
 @media only screen and (max-width: 780px){
-  .content .title h5{font-size: 12px; color: #ffcccc;}
+  .content .title h5{font-size: 16px; color: #ffcccc;}
   .content .title h3{font-size: 24px;}
   .content .title h4{font-size: 14px;}
   .content .prod-show .img-txt h3{line-height: 40px; background: #f9f9f9; font-size: 14px; color: #666666; text-align: center;}
