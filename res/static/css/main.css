@@ -27,6 +27,7 @@ body{font: 12px/1.5 PingFangSC-Regular,Tahoma,'Microsoft Yahei',sans-serif;}
 .header_box{height: 80px; line-height: 80px; border-bottom: 1px  solid #e8ebf2;}
 .header{max-width: 1200px; margin:0 auto; position: relative; height: 100%;}
 .header h1{display: inline-block; padding-left: 35px;}
+.header h1 img{width: 115px;}
 .header .nav{font-size: 14px; text-align: right; display: inline-block; vertical-align: top; float: right;}
 .header .nav a{color: #010101!important; display: inline-block; padding:0 35px;}
 .header .nav a.active{color: #ab8e75!important;}
@@ -52,9 +53,9 @@ body{font: 12px/1.5 PingFangSC-Regular,Tahoma,'Microsoft Yahei',sans-serif;}
 
 /*index*/
 .content .title{text-align: center; color: #333333; padding:50px 0;}
-.content .title h5{font-size: 18px; color: #878787;}
-.content .title h3{font-size: 48px;}
-.content .title h4{font-size: 20px;}
+.content .title h5{font-size: 18px; color: #ffcccc;}
+.content .title h3{font-size: 26px;}
+.content .title h4{font-size: 14px;}
 .content .prod-show{padding:100px 0; max-width: 1200px; margin:0 auto;}
 .content .prod-show .img-txt h3{line-height: 70px; background: #f9f9f9; font-size: 18px; color: #666666; text-align: center;}
 .content .prod-descr{max-width: 1200px; margin:0 auto;}
@@ -71,6 +72,8 @@ body{font: 12px/1.5 PingFangSC-Regular,Tahoma,'Microsoft Yahei',sans-serif;}
 .content .Partner .title h4{font-size: 14px;}
 .content .Partner .cont-box{max-width: 1200px; margin:0 auto; text-align: center;}
 .content .Partner .cont-box h2{color: #989898; font-size:50px; height: 22%; background: #fff;}
+.img-txt img{height:283px;}
+/*.layui-this{height:100%;}*/
 /*end-index*/
 
 
@@ -179,6 +182,9 @@ body{font: 12px/1.5 PingFangSC-Regular,Tahoma,'Microsoft Yahei',sans-serif;}
     font-size: 26px; 
     padding:30px 0;
   }
+  .img-txt img{
+    height:240px;
+  }
   .content .prod-descr .item .text p{
     font-size: 22px; 
     line-height: 40px; 
@@ -236,7 +242,9 @@ body{font: 12px/1.5 PingFangSC-Regular,Tahoma,'Microsoft Yahei',sans-serif;}
   .about-info .img-texts .item{
     padding:0 20px;
   }
-
+  .img-txt img{
+    height: 166.5px;
+  }
 
   .service-contact{
     margin-bottom: 50px;
@@ -341,7 +349,7 @@ body{font: 12px/1.5 PingFangSC-Regular,Tahoma,'Microsoft Yahei',sans-serif;}
 }
 
 @media only screen and (max-width: 780px){
-  .content .title h5{font-size: 12px; color: #878787;}
+  .content .title h5{font-size: 12px; color: #ffcccc;}
   .content .title h3{font-size: 24px;}
   .content .title h4{font-size: 14px;}
   .content .prod-show .img-txt h3{line-height: 40px; background: #f9f9f9; font-size: 14px; color: #666666; text-align: center;}

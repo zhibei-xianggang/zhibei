@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>首页</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
   <script type="text/javascript" src="../res/layui/layui.js"></script>
@@ -26,17 +26,17 @@
         </li>
       </ul>
       <h1 class="logo">
-        <a href="#">植蓓</a>
+        <a href="#"><img src="../images/logo.png"></a>
       </h1>
       <div class="nav"  style="visibility: visible">
         <a href="index.html" class="active">首页</a>
-        <a href="case.html">案例</a>
+        <a href="case.html">商品</a>
         <a href="service.html">服务</a>
         <a href="about.html">关于</a>
       </div> 
       <ul class="layui-nav header-down-nav">
         <li class="layui-nav-item"><a href="index.html" class="active">首页</a></li>
-        <li class="layui-nav-item"><a href="case.html">案例</a></li>
+        <li class="layui-nav-item"><a href="case.html">商品</a></li>
         <li class="layui-nav-item"><a href="service.html">服务</a></li>
         <li class="layui-nav-item"><a href="about.html">关于</a></li>
       </ul> 
@@ -48,14 +48,19 @@
   <!-- content -->
     <div class="content">
       <div class="title">
-        <h5>欢迎您的到来</h5>
-        <h3>好礼品我们造,用心做好产品</h3>
-        <h4>We build good products and make good products.</h4>
+        <h5>安全、健康、纯天然</h5>
+        <h3>天然之肌，源于自然</h3>
+        <h4>Natural muscles originate from nature.</h4>
       </div>
       <div class="layui-carousel imgbox"  id="test1">
         <div carousel-item  class="imgH">
-          <div><img style="width: 100%" src="../res/static/images/sy_banner1.jpg"></div>
-          <div><img style="width: 100%" src="../res/static/images/sy_banner1.jpg"></div>
+          <div><img style="width: 100%;" src="../images/lunbo1.jpg"></div>
+          <div><img style="width: 100%;" src="../images/lunbo2.jpg"></div>
+          <div><img style="width: 100%;" src="../images/lunbo3.jpg"></div>
+          <div><img style="width: 100%;" src="../images/lunbo4.jpg"></div>
+          <div><img style="width: 100%;" src="../images/lunbo5.jpg"></div>
+          <div><img style="width: 100%;" src="../images/lunbo6.jpg"></div>
+          <div><img style="width: 100%;" src="../images/lunbo7.jpg"></div>
         </div>
       </div>
       <div class="prod-show">
@@ -63,26 +68,26 @@
           <div class="row layui-col-space12 layui-clear">
             <div class="layui-col-xs6 layui-col-sm6 layui-col-md3">
               <div class="img-txt">
-                <img style="width: 100%;" src="../res/static/images/sy_img1.jpg" alt="">
-                <h3>食品包装</h3>
+                <img style="width: 100%;" src="../images/shangpin1.jpg" alt="">
+                <h3>植蓓-气垫</h3>
               </div>
             </div>
             <div class="layui-col-xs6 layui-col-sm6 layui-col-md3">
               <div class="img-txt">
-                <img style="width: 100%;" src="../res/static/images/sy_img2.jpg" alt="">
-                <h3>食品包装</h3>
+                <img style="width: 100%;" src="../images/shangpin2.jpg" alt="">
+                <h3>植蓓-口红</h3>
               </div>
             </div>
             <div class="layui-col-xs6 layui-col-sm6 layui-col-md3">
               <div class="img-txt">
-                <img style="width: 100%;" src="../res/static/images/sy_img3.jpg" alt="">
-                <h3>食品包装</h3>
+                <img style="width: 100%;" src="../images/shangpin3.jpg" alt="">
+                <h3>舒仑度</h3>
               </div>
             </div>
             <div class="layui-col-xs6 layui-col-sm6 layui-col-md3">
               <div class="img-txt">
-                <img style="width: 100%;" src="../res/static/images/sy_img4.jpg" alt="">
-                <h3>食品包装</h3>
+                <img style="width: 100%;" src="../images/shangpin4.jpg" alt="">
+                <h3>植蓓-面膜</h3>
               </div>
             </div>
           </div>
@@ -225,6 +230,7 @@
       elem: '#test1'
       ,width: '100%' //设置容器宽度
       ,arrow: 'always'
+      ,interval:3000
       ,height:'auto'
       //,anim: 'updown' //切换动画方式
     });
@@ -233,6 +239,7 @@
     })
     var imgH = $('.imgbox div.layui-this').outerHeight();
     $('.imgH').css('height',imgH+'px')
+    $('.imgH div img').css('height',imgH+'px')
     window.onresize = function () {
       var imgH = $('.imgbox div.layui-this').outerHeight();
       $('.imgH').css('height',imgH+'px')
