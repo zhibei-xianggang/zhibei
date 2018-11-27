@@ -50,17 +50,17 @@
   <div class="case-content">
     <div class="banner">
         <div class="img-text">
-          <img src="../res/static/images/al_img1.jpg" alt="">
-          <h3>
+          <img src="../images/lunbo2.jpg" alt="">
+          <h3 class="pamb90">
             今日推荐
-            <br><span>优秀案例</span>
+            <br><span>植蓓水光气垫CC</span>
           </h3>
         </div>
         <div class="img-text active">
-          <img src="../res/static/images/al_img2.jpg" alt="">
-          <h3>
+          <img src="../images/lunbo3.jpg" alt="">
+          <h3 class="pamt90">
             今日推荐
-            <br><span>优秀案例</span>
+            <br><span>植蓓雪绒花修复眼膜</span>
           </h3>
         </div>
     </div>
@@ -94,9 +94,10 @@
   <div class="footer">
     <div class="line"></div>
     <p class="copyright">
-      @2016  ALL  ADHFGJKSHH<br />
-      E-MAIL:66666666@162.com<br />
-      TEL:400-888-888
+      @2016  ALL  香港-植蓓(CHIKPUI)<br />
+      我的邮箱:15924432886@163.com<br />
+      我的微信:18310332926<br />
+      我的手机:18310332926
     </p>
     <div class="icon_box">
       <a href="#"><i class="layui-icon layui-icon-login-wechat weixin-icon"></i></a>
@@ -118,7 +119,22 @@ layui.config({
 
   // 模版引擎导入
 
-  var data = {"code":0,"msg":"成功返回","last_page":2,"list_page":1000,"data":[{"text":"植蓓护肤水","images":"../res/static/images/al_img3.jpg","price":"128元/瓶(100ml)"},{"text":"植蓓护肤水","images":"../res/static/images/al_img3.jpg","price":"128元/瓶(100ml)"},{"text":"植蓓护肤水","images":"../res/static/images/al_img3.jpg","price":"128元/瓶(100ml)"},{"text":"植蓓护肤水","images":"../res/static/images/al_img3.jpg","price":"128元/瓶(100ml)"},{"text":"植蓓护肤水","images":"../res/static/images/al_img3.jpg","price":"128元/瓶(100ml)"},{"text":"植蓓护肤水","images":"../res/static/images/al_img3.jpg","price":"128元/瓶(100ml)"},{"text":"植蓓护肤水","images":"../res/static/images/al_img3.jpg","price":"128元/瓶(100ml)"},{"text":"植蓓护肤水","images":"../res/static/images/al_img3.jpg","price":"128元/瓶(100ml)"},{"text":"植蓓护肤水","images":"../res/static/images/al_img3.jpg","price":"128元/瓶(100ml)"},{"text":"植蓓护肤水","images":"../res/static/images/al_img3.jpg","price":"128元/瓶(100ml)"},{"text":"植蓓护肤水","images":"../res/static/images/al_img3.jpg","price":"128元/瓶(100ml)"},{"text":"植蓓护肤水","images":"../res/static/images/al_img3.jpg","price":"128元/瓶(100ml)"},{"text":"植蓓护肤水","images":"../res/static/images/al_img3.jpg","price":"128元/瓶(100ml)"},{"text":"植蓓护肤水","images":"../res/static/images/al_img3.jpg","price":"128元/瓶(100ml)"}]}
+  var data = {"code":0,"msg":"成功返回","last_page":2,"list_page":1000,"data":[
+    {"text":"植蓓驻颜水","images":"../images/liebiao1-1.jpg","price":"128元/瓶(150ml)"},
+    {"text":"植蓓驻颜乳","images":"../images/liebiao1-3.jpg","price":"158元/瓶(170ml)"},
+    {"text":"植蓓蓝光防晒隔离乳","images":"../images/fangshai/fangshai1.jpg","price":"128元/瓶(100ml)"},
+    {"text":"植蓓护肤水","images":"../res/static/images/al_img1.jpg","price":"128元/瓶(100ml)"},
+    {"text":"植蓓护肤水","images":"../res/static/images/al_img2.jpg","price":"128元/瓶(100ml)"},
+    {"text":"植蓓护肤水","images":"../res/static/images/al_img3.jpg","price":"128元/瓶(100ml)"},
+    {"text":"植蓓护肤水","images":"../res/static/images/al_img1.jpg","price":"128元/瓶(100ml)"},
+    {"text":"植蓓护肤水","images":"../res/static/images/al_img2.jpg","price":"128元/瓶(100ml)"},
+    {"text":"植蓓护肤水","images":"../res/static/images/al_img3.jpg","price":"128元/瓶(100ml)"},
+    {"text":"植蓓护肤水","images":"../res/static/images/al_img1.jpg","price":"128元/瓶(100ml)"},
+    {"text":"植蓓护肤水","images":"../res/static/images/al_img2.jpg","price":"128元/瓶(100ml)"},
+    {"text":"植蓓护肤水","images":"../res/static/images/al_img3.jpg","price":"128元/瓶(100ml)"},
+    {"text":"植蓓护肤水","images":"../res/static/images/al_img1.jpg","price":"128元/瓶(100ml)"},
+    {"text":"植蓓护肤水","images":"../res/static/images/al_img2.jpg","price":"128元/瓶(100ml)"}
+    ]};
   laytpl.config({
     open: '<%',
     close: '%>'
@@ -155,9 +171,13 @@ layui.config({
   })
   $('.case-content .banner .img-text').on('click',function(){
     if($(this).hasClass('active')){
-      $(this).removeClass('active').siblings('.img-text').addClass('active')
+      $(this).removeClass('active').siblings('.img-text').addClass('active');
+      $(this).children('h3').attr('class','pamb90');
+      $(this).siblings('.img-text').children('h3').attr('class','pamt90');
     }else{
-      $(this).addClass('active').siblings('.img-text').removeClass('active')
+      $(this).addClass('active').siblings('.img-text').removeClass('active');
+      $(this).children('h3').attr('class','pamt90');
+      $(this).siblings('.img-text').children('h3').attr('class','pamb90');
     }
   })
 });

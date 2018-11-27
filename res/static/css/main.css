@@ -84,7 +84,7 @@ body{font: 12px/1.5 PingFangSC-Regular,Tahoma,'Microsoft Yahei',sans-serif;}
 .content .Partner .title h4{font-size: 14px;}
 .content .Partner .cont-box{max-width: 1200px; margin:0 auto; text-align: center;}
 .content .Partner .cont-box h2{color: #989898; font-size:50px; height: 22%; background: #fff;}
-.img-txt img{height:283px;}
+.img-txt img{height:383px;}
 .partner-img{width: 20%;height: 95px;}
 /*end-index*/
 
@@ -161,13 +161,15 @@ body{font: 12px/1.5 PingFangSC-Regular,Tahoma,'Microsoft Yahei',sans-serif;}
 /*case*/
 .case-content .banner{max-width: 1440px; margin:60px auto 100px auto; position: relative; padding-bottom: 5%;}
 .case-content .banner .img-text{width: 54%; position: relative; cursor: pointer;}
-.case-content .banner .img-text img{width: 100%;}
-.case-content .banner .img-text h3{color: #a1a1a1; font-size: 30px;   display: block; position: absolute; top: 30%; right:20%;}
+.case-content .banner .img-text img{width: 100%;height: 250px;}
+.case-content .banner .img-text h3{color: #a1a1a1; font-size: 30px;   display: block; position: absolute;right:20%;}
+.pamb90{bottom: -90px;}
+.pamt90{top: -90px;}
 .case-content .banner .img-text.active{position: absolute; right: 0; bottom: 0;}
 .case-content .banner .img-text h3 span{padding-left: 50px; display: inline-block;}
 .case-content .imgtext-flow{max-width: 1200px; margin:50px auto; padding-bottom: 20px;}
 .case-content .imgtext-flow .item{margin-bottom: 50px; padding:0px 10px;}
-.case-content .imgtext-flow .item img{width: 100%;}
+.case-content .imgtext-flow .item img{width: 100%;height: 435px;}
 .case-content .imgtext-flow .item-text{padding-left: 20px;}
 .case-content .imgtext-flow .item h3{font-size: 24px; color: #333; padding: 30px 0 16px 0;}
 .case-content .imgtext-flow .item span{font-size: 18px; color: #666;}
@@ -189,6 +191,9 @@ body{font: 12px/1.5 PingFangSC-Regular,Tahoma,'Microsoft Yahei',sans-serif;}
     position:relative; 
     margin-top: 20px;
   }
+  .pamb90{bottom: -65px;}
+  .pamt90{top: -65px;}
+  .case-content .banner .img-text img{height: 200px;}
   .partner-img{height: 85px;}
   .content .prod-descr .item .text{
     padding:0 30px;
@@ -198,7 +203,7 @@ body{font: 12px/1.5 PingFangSC-Regular,Tahoma,'Microsoft Yahei',sans-serif;}
     padding:30px 0;
   }
   .img-txt img{
-    height:240px;
+    height:300px;
   }
   .content .prod-descr .item .text p{
     font-size: 14px; 
@@ -262,7 +267,7 @@ body{font: 12px/1.5 PingFangSC-Regular,Tahoma,'Microsoft Yahei',sans-serif;}
     height: 450px;
   }
   .img-txt img{
-    height: 166.5px;
+    height: 200px;
   }
   .content .prod-descr .item img{width: 100%;height:184px;}
   .content .prod-descr .item .left-img{height:345px;}
