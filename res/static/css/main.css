@@ -150,7 +150,7 @@ body{font: 12px/1.5 PingFangSC-Regular,Tahoma,'Microsoft Yahei',sans-serif;}
 
 /*details*/
 .details-content{max-width: 1200px; margin:0 auto;}
-.details-content .title{line-height: 30px; padding:32px 0 40px 30px;}
+.details-content .title{line-height: 50px; padding:0px 0px 0px 30px;}
 .details-content .title h3{font-size: 18px; color: #333;}
 .details-content .title h4{font-size: 14px; color: #aaa;}
 .details-content .img-box{padding-bottom: 100px;}

@@ -66,7 +66,7 @@
     </div>
     <div class="imgtext-flow">
       <div class="layui-fluid pb50">
-        <div class="layui-row item-list-box layui-clear" id="item-list-box" style="margin:0">
+        <div class="layui-row item-list-box layui-clear" id="item-list-box" style="margin:0;">
         </div>
       </div>
     </div>  
@@ -121,19 +121,19 @@ layui.config({
 
   // 模版引擎导入
 
-  var data = {"code":0,"msg":"成功返回","last_page":2,"list_page":1000,"data":[
-    {"text":"植蓓驻颜水","images":"../images/liebiao1-1.jpg","price":"148元/瓶(120ml)","lianjiedizhi":"./details.html"},
-    {"text":"植蓓驻颜乳","images":"../images/liebiao1-3.jpg","price":"158元/瓶(100ml)","lianjiedizhi":"./details.html"},
-    {"text":"植蓓蓝光防晒隔离乳","images":"../images/fangshai/fangshai1.jpg","price":"128元/瓶(45ml)","lianjiedizhi":"./details.html"},
-    {"text":"植蓓水光面膜","images":"../images/mianmo/mianmo1.jpg","price":"128元/盒(5贴)","lianjiedizhi":"./details.html"},
-    {"text":"植蓓雪绒花修复眼膜","images":"../images/yanmo/yanmo11.jpg","price":"168元/盒(8贴)","lianjiedizhi":"./details.html"},
-    {"text":"植蓓口红","images":"../images/kouhong/kouhong13.jpg","price":"98元/支","lianjiedizhi":"./details.html"},
-    {"text":"植蓓水光气垫CC","images":"../images/qidian/qidian8.jpg","price":"128元/盒(15g)","lianjiedizhi":"./details.html"},
-    {"text":"三合一净颜纸","images":"../images/jingyanzhi/jingyanzhi1.jpg","price":"98元/盒(90片)","lianjiedizhi":"./details.html"},
-    {"text":"舒仑朵纸尿裤","images":"../images/zhiniaoku/zhiniaoku10.jpg","price":"128元/包(尺码)","lianjiedizhi":"./details.html"},
-    {"text":"舒仑度拉拉裤","images":"../images/lalaku/lalaku16.jpg","price":"148元/包(尺码)","lianjiedizhi":"./details.html"},
-    {"text":"惹火皮裤","images":"../images/piku/piku3.jpg","price":"128元/条(尺码)","lianjiedizhi":"./details.html"},
-    {"text":"米爱琪","images":"../images/miaiqi/miaiqi9.jpg","price":"98元/套(日+夜)","lianjiedizhi":"./details.html"}
+  var data = {"code":0,"msg":"成功返回","last_page":4,"list_page":1000,"data":[
+    {"text":"植蓓驻颜水","images":"../images/liebiao1-1.jpg","price":"148元/瓶(120ml)","lianjiedizhi":"./zhuyanshuidetails.html"},
+    {"text":"植蓓驻颜乳","images":"../images/liebiao1-3.jpg","price":"158元/瓶(100ml)","lianjiedizhi":"./zhuyanrudetails.html"},
+    {"text":"植蓓蓝光防晒隔离乳","images":"../images/fangshai/fangshai1.jpg","price":"128元/瓶(45ml)","lianjiedizhi":"./fangshaidetails.html"},
+    {"text":"植蓓水光面膜","images":"../images/mianmo/mianmo1.jpg","price":"128元/盒(5贴)","lianjiedizhi":"./mianmodetails.html"},
+    {"text":"植蓓雪绒花修复眼膜","images":"../images/yanmo/yanmo11.jpg","price":"168元/盒(8贴)","lianjiedizhi":"./yanmodetails.html"},
+    {"text":"植蓓口红","images":"../images/kouhong/kouhong13.jpg","price":"98元/支","lianjiedizhi":"./kouhongdetails.html"},
+    {"text":"植蓓水光气垫CC","images":"../images/qidian/qidian8.jpg","price":"128元/盒(15g)","lianjiedizhi":"./qidiandetails.html"},
+    {"text":"三合一净颜纸","images":"../images/jingyanzhi/jingyanzhi1.jpg","price":"98元/盒(90片)","lianjiedizhi":"./jingyanzhidetails.html"},
+    {"text":"舒仑朵纸尿裤","images":"../images/zhiniaoku/zhiniaoku10.jpg","price":"128元/包(尺码)","lianjiedizhi":"./zhiniaokudetails.html"},
+    {"text":"舒仑度拉拉裤","images":"../images/lalaku/lalaku16.jpg","price":"148元/包(尺码)","lianjiedizhi":"./lalakudetails.html"},
+    {"text":"惹火皮裤","images":"../images/piku/piku3.jpg","price":"128元/条(尺码)","lianjiedizhi":"./pikudetails.html"},
+    {"text":"米爱琪","images":"../images/miaiqi/miaiqi9.jpg","price":"98元/套(日+夜)","lianjiedizhi":"./miaiqidetails.html"}
     ]};
   laytpl.config({
     open: '<%',
@@ -144,25 +144,33 @@ layui.config({
       elem: '#item-list-box'
       ,isAuto :  false
       ,isLazyimg: true
-      ,mb:100
+      ,mb:50
       ,done: function(page,next){
         var lis = [];
         var getTpl = zonesTpl.innerHTML;
         var img = new Image();
+        // for(var i = 0;i<data.data.length;i++){
+        //   laytpl(getTpl).render(item,function(html){
+        //     lis.push(html); 
+        //   });
+        // };
+        
         layui.each(data.data,function(index,item){  
           laytpl(getTpl).render(item,function(html){
             lis.push(html); 
           });
         });
+        next(lis.join(''),page<data.last_page);
           // common.waterfall(); 
-          if(page < data.data.last_page){
-            next(lis.join(''),true);
-          }else{
-            next(lis.join(''),false);
-          }
+          // if(page < data.data.last_page){
+          //   next(lis.join(''),true);
+          // }else{
+          //   next(lis.join(''),false);
+          // }
           element.init()
       }
-    })
+    });
+
   // window.onload = function(){
   //   common.waterfall(); 
   // }
