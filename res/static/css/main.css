@@ -34,8 +34,21 @@ body{font: 12px/1.5 PingFangSC-Regular,Tahoma,'Microsoft Yahei',sans-serif;}
   visibility: hidden;
   clear: both;
 }
+.comebacktop{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #fff;
+  opacity: 0.8;
+  border: 1px solid #eee;
+  border-radius: 50%;
+}
+.comebacktop img{
+  height: 30px;
+  width: 30px;
+}
 /*header*/
-.header_box{height: 80px; line-height: 80px; border-bottom: 1px  solid #e8ebf2;}
+.header_box{height: 60px; line-height: 60px; border-bottom: 1px  solid #e8ebf2;}
 .header{max-width: 1200px; margin:0 auto; position: relative; height: 100%;}
 .header h1{display: inline-block; padding-left: 35px;}
 .header h1 img{width: 115px;}
@@ -43,14 +56,14 @@ body{font: 12px/1.5 PingFangSC-Regular,Tahoma,'Microsoft Yahei',sans-serif;}
 .header .nav a{color: #010101!important; display: inline-block; padding:0 35px;}
 .header .nav a.active{color: #ab8e75!important;}
 .app-header{display: none;}
-.app-header-menuicon{display: block; position: absolute; top: 0; width: 80px; height: 80px; cursor: pointer; text-align: center;}
+.app-header-menuicon{display: block; position: absolute; top: 0px; width: 60px; height: 60px; cursor: pointer; text-align: center;}
 .app-header-menuicon i{font-size: 30px;}
 .header-down-nav{display: none;}
 /*end-header*/
 
 
 /*footer*/
-.footer{background: #231f20; text-align: center; padding:65px;}
+.footer{background: #231f20; text-align: center; padding:20px;}
 .footer .line{width: 220px; height: 2px; background: #dedede; margin:0 auto; }
 .footer p.copyright{font-size: 14px; color: #dedede; line-height: 24px; padding:70px 0 40px 0;}
 .footer .icon_box i{color: #fff; font-size: 26px;}
@@ -63,7 +76,7 @@ body{font: 12px/1.5 PingFangSC-Regular,Tahoma,'Microsoft Yahei',sans-serif;}
 
 
 /*index*/
-.content .title{text-align: center; color: #333333; padding:50px 0;}
+.content .title{text-align: center; color: #333333; padding:20px 0;}
 .content .title h5{font-size: 18px; color: #ffcccc;}
 .content .title h3{font-size: 26px;}
 .content .title h4{font-size: 14px;}
@@ -167,11 +180,11 @@ body{font: 12px/1.5 PingFangSC-Regular,Tahoma,'Microsoft Yahei',sans-serif;}
 .pamt90{top: -90px;}
 .case-content .banner .img-text.active{position: absolute; right: 0; bottom: 0;}
 .case-content .banner .img-text h3 span{padding-left: 50px; display: inline-block;}
-.case-content .imgtext-flow{max-width: 1200px; margin:50px auto; padding-bottom: 20px;}
-.case-content .imgtext-flow .item{margin-bottom: 30px; padding:0px 10px;text-align: center;}
+.case-content .imgtext-flow{max-width: 1200px; margin:20px auto 30px; padding-bottom: 20px;}
+.case-content .imgtext-flow .item{margin-bottom: 20px; padding:0px 10px;text-align: center;}
 .case-content .imgtext-flow .item img{width: 80%;height: 435px;border-radius: 15px;}
 .case-content .imgtext-flow .item-text{padding-left: 20px;}
-.case-content .imgtext-flow .item h3{font-size: 18px; color: #333; padding: 15px 0 10px 0;}
+.case-content .imgtext-flow .item h3{font-size: 16px; color: #333; padding: 15px 0 10px 0;}
 .case-content .imgtext-flow .item span{font-size: 14px; color: #666;}
 .case-content .imgtext-flow .layui-flow-more{position: absolute; bottom: 0px; left:50%; margin-left: -48px;}
 /*end-case*/
@@ -306,20 +319,22 @@ body{font: 12px/1.5 PingFangSC-Regular,Tahoma,'Microsoft Yahei',sans-serif;}
     width: 100%;
     z-index: 2;
     text-align: center;
-    top: 80px;
+    top: 60px;
     padding:0;
     display: block;
   }
   .layui-nav.down-nav li{
-    height: 60px;
-    line-height: 60px;
+    height: 50px;
+    line-height: 50px;
+    float: left;
+    width: 25%;
     display: block;
   }
   .layui-nav.down-nav li a{
-    height: 60px;
-    line-height: 60px;
+    height: 50px;
+    line-height: 50px;
     color: #fff;
-    font-size: 18px;
+    font-size: 14px;
   }
   .service-content .content-introduction{
     padding:20px 0;
