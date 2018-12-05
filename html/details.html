@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
   <script type="text/javascript" src="../res/layui/layui.js"></script>
   <script type="text/javascript" src="../js/public-parts.js"></script>
+  <link rel="shortcut icon" href="../images/index/girl.png">
   <link rel="stylesheet" type="text/css" href="../res/layui/css/layui.css">
   <link rel="stylesheet" type="text/css" href="../res/static/css/main.css">
   <!--加载meta IE兼容文件-->
@@ -50,7 +51,9 @@
     //建造实例
     $('.app-header-menuicon').on('click',function(){
       $('.header-down-nav').toggleClass('down-nav')
-    })
+    });
+
+    $('.nav a').eq(1).addClass('active').siblings('a').removeClass('active');
   });
   </script>
 </body>

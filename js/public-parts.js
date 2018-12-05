@@ -11,17 +11,17 @@ layui.use('jquery',function(){
 	publicheaderhtml+='<a href="about.html">';
 	publicheaderhtml+='<img style="width:60px;height:50px;float:right;margin-right:15px;margin-top:5px;" src="../images/index/logo.png">';
 	publicheaderhtml+='</a>';
-	publicheaderhtml+='<div class="nav"  style="visibility: visible">';
+	publicheaderhtml+='<div class="nav" style="visibility: visible">';
 	publicheaderhtml+='<a href="index.html" class="active">首页</a>';
 	publicheaderhtml+='<a href="case.html">商品</a>';
-	publicheaderhtml+='<a href="service.html">服务</a>';
-	publicheaderhtml+='<a href="about.html">关于</a>';
+	publicheaderhtml+='<a href="dynamic.html">最新动态</a>';
+	publicheaderhtml+='<a href="about.html">关于我们</a>';
 	publicheaderhtml+='</div>';
 	publicheaderhtml+='<ul class="layui-nav header-down-nav">';
 	publicheaderhtml+='<li class="layui-nav-item"><a href="index.html" class="active">首页</a></li>';
 	publicheaderhtml+='<li class="layui-nav-item"><a href="case.html">商品</a></li>';
-	publicheaderhtml+='<li class="layui-nav-item"><a href="service.html">服务</a></li>';
-	publicheaderhtml+='<li class="layui-nav-item"><a href="about.html">关于</a></li>';
+	publicheaderhtml+='<li class="layui-nav-item"><a href="dynamic.html">最新动态</a></li>';
+	publicheaderhtml+='<li class="layui-nav-item"><a href="about.html">关于我们</a></li>';
 	publicheaderhtml+='</ul>';
 	publicheaderhtml+='</div>';
 
