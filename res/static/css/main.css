@@ -160,8 +160,8 @@ body{font: 12px/1.5 PingFangSC-Regular,Tahoma,'Microsoft Yahei',sans-serif;}
 .about-info .coreTeam_box{background: #f6f6f9; position: relative;}
 .about-info .coreTeam_box .writebg{height: 360px; background: #fff; position: absolute; top: 0px; width: 100%;}
 .about-info .coreTeam{max-width: 1200px; margin:0 auto; text-align: center;}
-.about-info .coreTeam h3{font-size: 36px; color:#333333; padding:40px 0 24px 0;}
-.about-info .coreTeam h4{font-size: 24px; color: #888888; padding-bottom: 80px;}
+.about-info .coreTeam h3{font-size: 36px; color:#333333; padding:20px 0 10px 0;}
+.about-info .coreTeam h4{font-size: 24px; color: #888888; padding-bottom: 30px;}
 .about-info .coreTeam .imgTxt h6{font-size: 18px; padding:36px 0 110px 0;}
 .about-info .coreTeam .imgTxt img{ width: 100%;}
 .guanyuwomen{margin-top: 13%;}
