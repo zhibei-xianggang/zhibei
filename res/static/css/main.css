@@ -142,6 +142,8 @@ body{font: 12px/1.5 PingFangSC-Regular,Tahoma,'Microsoft Yahei',sans-serif;}
 .news-public{width: 100%;height: 80px;background: url('../../../images/tubiao/title-public.png') no-repeat center left;}
 .news-skills{width: 100%;height: 80px;background: url('../../../images/tubiao/title-skills.png') no-repeat center left;}
 .news-gongyi{width: 100%;height: 80px;background: url('../../../images/tubiao/title-skills.png') no-repeat center left;}
+.news-media{width: 100%;height: 80px;background: url('../../../images/tubiao/title-media.png') no-repeat center left;}
+.news-brand{width: 100%;height: 80px;background: url('../../../images/tubiao/title-brand.png') no-repeat center left;}
 /*end-service*/
 
 
@@ -162,9 +164,10 @@ body{font: 12px/1.5 PingFangSC-Regular,Tahoma,'Microsoft Yahei',sans-serif;}
 .about-info .coreTeam{max-width: 1200px; margin:0 auto; text-align: center;}
 .about-info .coreTeam h3{font-size: 36px; color:#333333; padding:20px 0 10px 0;}
 .about-info .coreTeam h4{font-size: 24px; color: #888888; padding-bottom: 30px;}
-.about-info .coreTeam .imgTxt h6{font-size: 18px; padding:36px 0 110px 0;}
+.about-info .coreTeam .imgTxt h6{font-size: 18px; padding:36px 0 30px 0;}
 .about-info .coreTeam .imgTxt img{ width: 100%;}
 .guanyuwomen{margin-top: 13%;}
+.pinpaiwenhuaall{margin-top: 3%;}
 /*end-about*/
 
 
@@ -215,6 +218,7 @@ body{font: 12px/1.5 PingFangSC-Regular,Tahoma,'Microsoft Yahei',sans-serif;}
     position:relative; 
     margin-top: 20px;
   }
+  .about-info .img-texts .item .text p{line-height: 33px;}
   .about-info .img-texts .item .text{padding-left: 0;}
   .guanyuwomen{margin-top: 20px;}
   .pamb90{bottom: -65px;}
@@ -274,6 +278,7 @@ body{font: 12px/1.5 PingFangSC-Regular,Tahoma,'Microsoft Yahei',sans-serif;}
   .layui-nav .layui-nav-item a{
     padding: 0px;
   }
+  .about-info .img-texts .item .text p{line-height: 30px;}
   .cha-more{margin-right:0px;}
   .about-info .img-texts .item{
     padding:0 20px;
